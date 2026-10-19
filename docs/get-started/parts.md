@@ -17,7 +17,7 @@ The assumption is that you already have these tools and supplies. If not, the fo
 | Long Hex Keys | [Harbor Freight](https://www.harborfreight.com/sae-and-metric-t-handle-ball-end-hex-key-set-18-piece-63167.html) | $20 |
 |**Choose only one set**| — | — |
 | JST-XH and Dupont Crimping Kit with Wires* | [Amazon](https://a.co/d/03rr8do3) | $30 |
-|— |**OR** | — |
+|**OR**| — | — |
 |Dupont-Terminated Wires | [Amazon](https://a.co/d/0bHWM9HL) | $7 |
 |JST-XH-Terminated Wires | [Amazon](https://a.co/d/090Ktn7A) | $15 |
 
@@ -74,7 +74,7 @@ Estimated battery-power hardware total: approximately $110, depending on your se
 | InnoMaker OV9281 Global-Shutter Camera | Captures high-speed images for computer vision | [Amazon](https://www.amazon.com/dp/B09WTP5GZH) | $30 |
 | **Choose Only One Screen** | | | |
 | Hosyond 7" Touchscreen Display | Touchscreen interface for OpenFlight | [Amazon](https://www.amazon.com/dp/B0D3QB7X4Z) | $46 |
-|OR|||
+|**OR**|||
 | Raspberry Pi 5" Touch Display 2 | Alternative touchscreen interface | [Pishop](https://www.pishop.us/product/raspberry-pi-5-touch-display-2-portrait/?src=raspberrypi) | $55 |
 | Touch Display 2 Cable | Connects the Raspberry Pi to the official Touch Display 2 | [Canakit](https://www.canakit.com/raspberry-pi-5-display-cable.html?cid=USD&src=raspberrypi) | $1 |
 
