@@ -2,10 +2,15 @@
 
 Hardware components for building the OpenFlight golf launch monitor.
 
-**Ordering shortcut:** A shared **[OpenFlight Mouser project](https://www.mouser.com/en/Tools/Project/Share?AccessID=4c97a00bbc)** is available for the parts Mouser stocks. Check it against the tables below before you order: anything Mouser does not carry has a direct vendor link here.
+> [!TIP]
+> **Ordering shortcut:** A shared **[OpenFlight Mouser project](https://www.mouser.com/en/Tools/Project/Share?AccessID=4c97a00bbc)** is available for the parts Mouser stocks. Check it against the tables below before you order: anything Mouser does not carry has a direct vendor link here.
 
 
 Below is the bill of materials (BOM) for OpenFlight. You can mix and match components to suit your budget and desired features. Use the lists below to determine what you'll need before moving on to building.
+
+> [!IMPORTANT]
+> **Before purchasing:** Prices are estimates and may change. Check the linked product pages for current pricing, compatibility, and availability.
+
 
 ## Tools and Extras
 
@@ -68,9 +73,9 @@ Estimated battery-power hardware total: approximately $110, depending on your se
 | **Raspberry Pi 5 4GB** | Main computer that runs OpenFlight | [Adafruit](https://www.adafruit.com/product/5812) | $130 |
 | **MicroSD Card** | Stores the operating system and OpenFlight software | [Amazon](https://a.co/d/09wPLlDT) | $35 |
 | **3D-Printed Enclosure** | Houses and protects the electronics | [OpenFlight Enclosure](https://github.com/open-flight/openflight-enclosure) | $60 |
-| **OPS243-A-CW-RP Doppler Radar**¹ | Measures golf ball speed using Doppler radar | [OmniPreSense](https://omnipresense.com/product/ops243-doppler-radar-sensor/) | $249 |
+| **OPS243-A-CW-RP Doppler Radar** [^1] | Measures golf ball speed using Doppler radar | [OmniPreSense](https://omnipresense.com/product/ops243-doppler-radar-sensor/) | $249 |
 | SparkFun SEN-14262 Sound Detector | Detects impact sounds for shot detection | [SparkFun](https://www.sparkfun.com/products/14262) | $12 |
-| TI IWR6843LEVM Radar Module | Provides additional radar tracking capabilities | [Texas Instruments](https://www.ti.com/tool/IWR6843LEVM) | $150 |
+| TI IWR6843LEVM Radar Module [^2] | Provides additional radar tracking capabilities | [Texas Instruments](https://www.ti.com/tool/IWR6843LEVM) | $150 |
 | InnoMaker OV9281 Global-Shutter Camera | Captures high-speed images for computer vision | [Amazon](https://www.amazon.com/dp/B09WTP5GZH) | $30 |
 | **Choose Only One Screen** | | | |
 | Hosyond 7" Touchscreen Display | Touchscreen interface for OpenFlight | [Amazon](https://www.amazon.com/dp/B0D3QB7X4Z) | $46 |
@@ -103,11 +108,6 @@ mounting, calibration, startup flags, and troubleshooting.
 **Next step after gathering parts:** See the [Raspberry Pi Setup Guide](../setup/raspberry-pi.md) for assembly and software installation.
 
 ---
+[^1]: OPS243-A-CW-WB (WiFi version): The standard OPS243-A-CW-RP (USB only) is strongly recommended. The WiFi module on the OPS243-A-CW-WB drives the internal UART receive line, preventing direct connection to the Raspberry Pi GPIO UART.
 
-
-
-**Before purchasing:** Prices are estimates and may change. Check the linked product pages for current pricing, compatibility, and availability.
-
-<sup>1: OPS243-A-CW-WB (WiFi version): The standard OPS243-A-CW-RP (USB only) is strongly recommended. The WiFi module on the OPS243-A-CW-WB drives the internal UART receive line, preventing direct connection to the Raspberry Pi GPIO UART.</sup>
-
-<sup>2: The TI board needs custom firmware — it does not work out of the box. The stock TI demo does not expose the raw radar cube OpenFlight needs. A validated prebuilt image ships in firmware/releases/, so you do not need the TI toolchain to flash it. </sup>
+[^2]: The TI board needs custom firmware — it does not work out of the box. The stock TI demo does not expose the raw radar cube OpenFlight needs. A validated prebuilt image ships in firmware/releases/, so you do not need the TI toolchain to flash it.
