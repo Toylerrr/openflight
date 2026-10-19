@@ -20,6 +20,7 @@ The assumption is that you already have these tools and supplies. If not, the fo
 |---|---|---:|
 | Soldering Iron | Your choice | — |
 | Long Hex Keys | [Harbor Freight](https://www.harborfreight.com/sae-and-metric-t-handle-ball-end-hex-key-set-18-piece-63167.html) | $20 |
+| Resistor Kit | [Amazon](https://a.co/d/0hUAJ7W2) | $10 |
 |**Choose only one set**| — | — |
 | JST-XH and Dupont Crimping Kit with Wires* | [Amazon](https://a.co/d/03rr8do3) | $30 |
 |**OR**| — | — |
