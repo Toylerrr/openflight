@@ -5,11 +5,7 @@ Hardware components for building the OpenFlight golf launch monitor.
 **Ordering shortcut:** A shared **[OpenFlight Mouser project](https://www.mouser.com/en/Tools/Project/Share?AccessID=4c97a00bbc)** is available for the parts Mouser stocks. Check it against the tables below before you order: anything Mouser does not carry has a direct vendor link here.
 
 
-Below is the bill of materials (BOM) for OpenFlight.
-
-You can mix and match components to suit your budget and desired features. Use the lists below to determine what you'll need before moving on to building.
-
-[!NOTE] Battery power is optional for all builds. If you plan to add a battery, install it during the initial build. Adding one later may require completely disassembling the enclosure.
+Below is the bill of materials (BOM) for OpenFlight. You can mix and match components to suit your budget and desired features. Use the lists below to determine what you'll need before moving on to building.
 
 ## Tools and Extras
 
@@ -25,7 +21,8 @@ The assumption is that you already have these tools and supplies. If not, the fo
 |Dupont-Terminated Wires | [Amazon](https://a.co/d/0bHWM9HL) | $7 |
 |JST-XH-Terminated Wires | [Amazon](https://a.co/d/090Ktn7A) | $15 |
 
-[!NOTE] You only need one solution for the wires the kit or the preterminated wires
+>[!NOTE]
+>You only need one solution for the wires the kit or the preterminated wires
 
 ## Enclosure
 
@@ -38,22 +35,16 @@ The assumption is that you already have these tools and supplies. If not, the fo
 
 ### 3D-Printed Parts
 
-Download and print the following files from the [OpenFlight Enclosure repository](https://github.com/open-flight/openflight-enclosure).
-
-| Part | STL File | Notes |
-|---|---|---|
-| Shell | [Shell-x1202.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/shell/v1/Shell-x1202.stl) | This depends on what battery you are going to be using if see here for more info |
-| Screen Housing | [Screen-800x480.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/screen/v1/Screen-800x480.stl) | This depends on the screen you buy this one is specificaly for Hosyond 7 Inch Touchscreen IPS DSI Display Compatible with Raspberry Pi 5/4/3, 800x480 |
-| Camera and Sound Detector Housing | [Front-Camera-Sound-Detector.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/camera/v1/Front-Camera-Sound-Detector.stl) | - |
-| Sound Detector Retainer | [Sound-Detector-Retainer.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/camera/v1/Sound-Detector-Retainer.stl) | - |
-| Radar Housing | [Front-Radar-No-Fill.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/radar/v1/Front-Radar-No-Fill.stl) | - |
-| Adjustable Feet (print 4) | [Feet-Adjustable.stl](https://github.com/open-flight/openflight-enclosure/blob/main/stls/feet/v1/Feet-Adjustable.stl) | - |
+Download and print the files from the [OpenFlight Enclosure repository](https://github.com/open-flight/openflight-enclosure)
 
 **Estimated enclosure materials total: $55** (hardware: $25 + filament: $30).
 
 ## Battery Power (Optional)
 
-If you want to run OpenFlight on battery power, you'll need the following additional components.
+If you want to run OpenFlight on battery power, you'll need the following additional components. For more information see [Powering OpenFlight](power.md)
+>[!NOTE]
+>Battery power is optional for all builds. If you plan to add a battery, install it during the initial build. Adding one later may require completely disassembling the enclosure.
+
 
 | Item | Link | Approx. Price |
 |---|---|---:|
@@ -65,7 +56,8 @@ If you want to run OpenFlight on battery power, you'll need the following additi
 | Geekworm X1202 UPS HAT | [Geekworm](https://geekworm.com/products/x1202) | $51 |
 | Geekworm X1206 UPS HAT | [Geekworm](https://geekworm.com/products/x1206) | $52 |
 
-[!NOTE] Choose either the X1202 or X1206 UPS HAT, not both.
+>[!NOTE]
+>Choose either the X1202 or X1206 UPS HAT, not both.
 
 Estimated battery-power hardware total: approximately $110, depending on your selected UPS HAT and wiring options.
 
@@ -73,10 +65,10 @@ Estimated battery-power hardware total: approximately $110, depending on your se
 
 | Part | Description | Link | Approx. Price |
 | ---- | ----------- | ---- | ------ |
-| Raspberry Pi 5 4GB | Main computer that runs OpenFlight | [Adafruit](https://www.adafruit.com/product/5812) | $130 |
-| MicroSD Card | Stores the operating system and OpenFlight software | [Amazon](https://a.co/d/09wPLlDT) | $35 |
-| 3D-Printed Enclosure | Houses and protects the electronics | [OpenFlight Enclosure](https://github.com/open-flight/openflight-enclosure) | $60 |
-| OPS243-A-CW-RP Doppler Radar¹ | Measures golf ball speed using Doppler radar | [OmniPreSense](https://omnipresense.com/product/ops243-doppler-radar-sensor/) | $249 |
+| **Raspberry Pi 5 4GB** | Main computer that runs OpenFlight | [Adafruit](https://www.adafruit.com/product/5812) | $130 |
+| **MicroSD Card** | Stores the operating system and OpenFlight software | [Amazon](https://a.co/d/09wPLlDT) | $35 |
+| **3D-Printed Enclosure** | Houses and protects the electronics | [OpenFlight Enclosure](https://github.com/open-flight/openflight-enclosure) | $60 |
+| **OPS243-A-CW-RP Doppler Radar**¹ | Measures golf ball speed using Doppler radar | [OmniPreSense](https://omnipresense.com/product/ops243-doppler-radar-sensor/) | $249 |
 | SparkFun SEN-14262 Sound Detector | Detects impact sounds for shot detection | [SparkFun](https://www.sparkfun.com/products/14262) | $12 |
 | TI IWR6843LEVM Radar Module | Provides additional radar tracking capabilities | [Texas Instruments](https://www.ti.com/tool/IWR6843LEVM) | $150 |
 | InnoMaker OV9281 Global-Shutter Camera | Captures high-speed images for computer vision | [Amazon](https://www.amazon.com/dp/B09WTP5GZH) | $30 |
@@ -85,11 +77,13 @@ Estimated battery-power hardware total: approximately $110, depending on your se
 |OR|||
 | Raspberry Pi 5" Touch Display 2 | Alternative touchscreen interface | [Pishop](https://www.pishop.us/product/raspberry-pi-5-touch-display-2-portrait/?src=raspberrypi) | $55 |
 | Touch Display 2 Cable | Connects the Raspberry Pi to the official Touch Display 2 | [Canakit](https://www.canakit.com/raspberry-pi-5-display-cable.html?cid=USD&src=raspberrypi) | $1 |
-[!NOTE] Choose only one screen not both.
+
+>[!NOTE]
+>Choose only one screen not both.
 
 
 
-### Optional Enclosure Inclinometer
+### Enclosure Inclinometer (Optional)
 
 An LIS3DH mounted to the enclosure base lets OpenFlight compensate the IWR6843
 tilt when the rig is placed on uneven ground.
@@ -100,7 +94,8 @@ tilt when the rig is placed on uneven ground.
 | **JST-SH cable kit (Qwiic-to-Dupont)** | Qwiic/STEMMA QT to female Dupont jumpers, used in the validated build. The LIS3DH plugs into its STEMMA QT socket and the Dupont ends push straight onto the Pi GPIO header, so no soldering is needed — the alternative is soldering a header onto the breakout and wiring that by hand | [Amazon](https://www.amazon.com/Connector-Compatible-Development-Sensors-Drivers/dp/B0GJPRX4YT) | ~$10 |
 | **Qwiic-to-Dupont cable (single)** | Mouser-stocked equivalent of the kit above: one JST-SH 4-pin to female Dupont cable, 150 mm (SparkFun CAB-17261 / Mouser 474-CAB-17261, in the shared Mouser project; Adafruit 4397 is the same cable direct). Enough on its own for the LIS3DH → Pi header run, and it keeps the inclinometer orderable from Mouser. 150 mm is the only length made in this configuration — the shorter Qwiic cables have no Dupont end. Plug it into the LIS3DH socket nearer the Pi ([Cable lengths](#cable-lengths-enclosure-v3)) | [Mouser](https://www.mouser.com/ProductDetail/SparkFun-Electronics/CAB-17261?qs=DRkmTr78QAQLJE%2FDhtP97Q%3D%3D) / [Amazon](https://www.amazon.com/dp/B0992PHLBC) / [Adafruit 4397](https://www.adafruit.com/product/4397) | ~$2 |
 
-[!NOTE] See the [LIS3DH Inclinometer Setup Guide](../build/inclinometer.md) for wiring,
+>[!NOTE]
+>See the [LIS3DH Inclinometer Setup Guide](../build/inclinometer.md) for wiring,
 mounting, calibration, startup flags, and troubleshooting.
 
 
@@ -113,6 +108,6 @@ mounting, calibration, startup flags, and troubleshooting.
 
 **Before purchasing:** Prices are estimates and may change. Check the linked product pages for current pricing, compatibility, and availability.
 
-<sup>1: OPS243-A-CW-WB (WiFi version): The standard OPS243-A-CW-RP (USB only) is strongly recommended. The WiFi module on the OPS243-A-CW-WB drives the internal UART receive line, preventing direct connection to the Raspberry Pi GPIO UART. </sup>
+<sup>1: OPS243-A-CW-WB (WiFi version): The standard OPS243-A-CW-RP (USB only) is strongly recommended. The WiFi module on the OPS243-A-CW-WB drives the internal UART receive line, preventing direct connection to the Raspberry Pi GPIO UART.</sup>
 
 <sup>2: The TI board needs custom firmware — it does not work out of the box. The stock TI demo does not expose the raw radar cube OpenFlight needs. A validated prebuilt image ships in firmware/releases/, so you do not need the TI toolchain to flash it. </sup>
