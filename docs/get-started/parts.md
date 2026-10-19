@@ -2,14 +2,14 @@
 
 Hardware components for building the OpenFlight golf launch monitor.
 
-> **Ordering shortcut:** A shared **[OpenFlight Mouser project](https://www.mouser.com/en/Tools/Project/Share?AccessID=4c97a00bbc)** is available for the parts Mouser stocks. Check it against the tables below before you order: anything Mouser does not carry has a direct vendor link here.
+**Ordering shortcut:** A shared **[OpenFlight Mouser project](https://www.mouser.com/en/Tools/Project/Share?AccessID=4c97a00bbc)** is available for the parts Mouser stocks. Check it against the tables below before you order: anything Mouser does not carry has a direct vendor link here.
 
 
 Below is the bill of materials (BOM) for OpenFlight.
 
 You can mix and match components to suit your budget and desired features. Use the lists below to determine what you'll need before moving on to building.
 
-**Important:** Battery power is optional for all builds. If you plan to add a battery, install it during the initial build. Adding one later may require completely disassembling the enclosure.
+[!NOTE] Battery power is optional for all builds. If you plan to add a battery, install it during the initial build. Adding one later may require completely disassembling the enclosure.
 
 ## Tools and Extras
 
@@ -25,7 +25,7 @@ The assumption is that you already have these tools and supplies. If not, the fo
 |Dupont-Terminated Wires | [Amazon](https://a.co/d/0bHWM9HL) | $7 |
 |JST-XH-Terminated Wires | [Amazon](https://a.co/d/090Ktn7A) | $15 |
 
-**Note:** You only need one solution for the wires the kit or the preterminated wires
+[!NOTE] You only need one solution for the wires the kit or the preterminated wires
 
 ## Enclosure
 
@@ -65,7 +65,7 @@ If you want to run OpenFlight on battery power, you'll need the following additi
 | Geekworm X1202 UPS HAT | [Geekworm](https://geekworm.com/products/x1202) | $51 |
 | Geekworm X1206 UPS HAT | [Geekworm](https://geekworm.com/products/x1206) | $52 |
 
-**Note:** Choose either the X1202 or X1206 UPS HAT, not both.
+[!NOTE] Choose either the X1202 or X1206 UPS HAT, not both.
 
 Estimated battery-power hardware total: approximately $110, depending on your selected UPS HAT and wiring options.
 
@@ -85,7 +85,7 @@ Estimated battery-power hardware total: approximately $110, depending on your se
 |OR|||
 | Raspberry Pi 5" Touch Display 2 | Alternative touchscreen interface | [Pishop](https://www.pishop.us/product/raspberry-pi-5-touch-display-2-portrait/?src=raspberrypi) | $55 |
 | Touch Display 2 Cable | Connects the Raspberry Pi to the official Touch Display 2 | [Canakit](https://www.canakit.com/raspberry-pi-5-display-cable.html?cid=USD&src=raspberrypi) | $1 |
-**Note:** Choose only one screen not both.
+[!NOTE] Choose only one screen not both.
 
 
 
@@ -100,18 +100,18 @@ tilt when the rig is placed on uneven ground.
 | **JST-SH cable kit (Qwiic-to-Dupont)** | Qwiic/STEMMA QT to female Dupont jumpers, used in the validated build. The LIS3DH plugs into its STEMMA QT socket and the Dupont ends push straight onto the Pi GPIO header, so no soldering is needed — the alternative is soldering a header onto the breakout and wiring that by hand | [Amazon](https://www.amazon.com/Connector-Compatible-Development-Sensors-Drivers/dp/B0GJPRX4YT) | ~$10 |
 | **Qwiic-to-Dupont cable (single)** | Mouser-stocked equivalent of the kit above: one JST-SH 4-pin to female Dupont cable, 150 mm (SparkFun CAB-17261 / Mouser 474-CAB-17261, in the shared Mouser project; Adafruit 4397 is the same cable direct). Enough on its own for the LIS3DH → Pi header run, and it keeps the inclinometer orderable from Mouser. 150 mm is the only length made in this configuration — the shorter Qwiic cables have no Dupont end. Plug it into the LIS3DH socket nearer the Pi ([Cable lengths](#cable-lengths-enclosure-v3)) | [Mouser](https://www.mouser.com/ProductDetail/SparkFun-Electronics/CAB-17261?qs=DRkmTr78QAQLJE%2FDhtP97Q%3D%3D) / [Amazon](https://www.amazon.com/dp/B0992PHLBC) / [Adafruit 4397](https://www.adafruit.com/product/4397) | ~$2 |
 
-**Note:** See the [LIS3DH Inclinometer Setup Guide](../build/inclinometer.md) for wiring,
+[!NOTE] See the [LIS3DH Inclinometer Setup Guide](../build/inclinometer.md) for wiring,
 mounting, calibration, startup flags, and troubleshooting.
 
 
 
-> **Next step after gathering parts:** See the [Raspberry Pi Setup Guide](../setup/raspberry-pi.md) for assembly and software installation.
+**Next step after gathering parts:** See the [Raspberry Pi Setup Guide](../setup/raspberry-pi.md) for assembly and software installation.
 
 ---
 
 
 
-**Before purchasing:** Prices are estimates and may change. Check the linked product pages for current pricing, compatibility, and availability. Battery components are optional and must be purchased separately if desired.
+**Before purchasing:** Prices are estimates and may change. Check the linked product pages for current pricing, compatibility, and availability.
 
 <sup>1: OPS243-A-CW-WB (WiFi version): The standard OPS243-A-CW-RP (USB only) is strongly recommended. The WiFi module on the OPS243-A-CW-WB drives the internal UART receive line, preventing direct connection to the Raspberry Pi GPIO UART. </sup>
 
